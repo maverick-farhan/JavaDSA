@@ -8,8 +8,8 @@ public class Calculator {
             System.out.println("Enter Operator(+,-,/,*) number1 number2");
             //ch is operator for the arithmetic to perform
             String ch = in.next();
-            double num1 = in.nextFloat();
-            double num2 = in.nextFloat();
+            double num1 = in.nextDouble();
+            double num2 = in.nextDouble();
             switch(ch){
                 case "+":
                     System.out.println("Answer: "+ (num1+num2)+"\n");
