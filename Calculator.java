@@ -7,25 +7,26 @@ public class Calculator {
         while(flag){
             System.out.println("Enter Operator(+,-,/,*) number1 number2");
             //ch is operator for the arithmetic to perform
-            String ch = in.next();
+            System.out.println("Press Ctrl+C to exit the code\n");
+            char ch = in.next().trim().charAt(0);
             double num1 = in.nextDouble();
             double num2 = in.nextDouble();
             switch(ch){
-                case "+":
+                case '+':
                     System.out.println("Answer: "+ (num1+num2)+"\n");
                     break;
-                case "-":
+                case '-':
                     System.out.println("Answer: "+ (num1-num2)+"\n");
                     break;
-                case "*":
+                case '*':
                     System.out.println("Answer: "+ (num1*num2)+"\n");
                     break;
 
-                case "/":
+                case '/':
                     System.out.println("Answer: "+ (num1/num2)+"\n");
                     break;
                 default:
-                    System.out.println("Enter valid operations");
+                    System.out.println("Enter valid operations \n");
             }
         }
     }
