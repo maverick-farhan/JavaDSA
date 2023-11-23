@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class ReverseArray {
     public static void main(String[] args) {
         int[] arr = {12,2,4,14,5,10};
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Before Array reverse: " + Arrays.toString(arr));
         int start = 0;
         int end = arr.length - 1;
         while(start<=end){
@@ -11,7 +11,7 @@ public class ReverseArray {
             start++;
             end--;
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println("After Array reverse: "+ Arrays.toString(arr));
     }
 
     static void swap(int[] arr,int start,int end){
