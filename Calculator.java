@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
         boolean flag = true;
         while(flag){
             System.out.println("Enter Operator(+,-,/,*) number1 number2");
+            Scanner in = new Scanner(System.in);
             //ch is operator for the arithmetic to perform
             System.out.println("Press Ctrl+C to exit the code\n");
             char ch = in.next().trim().charAt(0);
